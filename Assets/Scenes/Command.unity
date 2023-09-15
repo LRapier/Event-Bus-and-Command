@@ -313,8 +313,8 @@ GameObject:
   - component: {fileID: 418062148}
   - component: {fileID: 418062147}
   - component: {fileID: 418062146}
-  - component: {fileID: 418062145}
   - component: {fileID: 418062144}
+  - component: {fileID: 418062150}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -334,21 +334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d3fd2a87c8794b4dba3e2f52ddf6c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _status: 
---- !u!114 &418062145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418062143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655d8313ff1b8a34aa4482ca29940681, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isTurboOn: 0
-  _distance: 1
 --- !u!65 &418062146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -427,6 +412,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &418062150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418062143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655d8313ff1b8a34aa4482ca29940681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211084505
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +433,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1211084507}
-  - component: {fileID: 1211084506}
   - component: {fileID: 1211084508}
   m_Layer: 0
   m_Name: InputHandler
@@ -445,18 +441,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1211084506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211084505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17c68238f07c754aa2ae1fc5bf5b53e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1211084507
 Transform:
   m_ObjectHideFlags: 0
@@ -484,7 +468,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba825441e0af60941afeee782ac48e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invoker: {fileID: 0}
-  _isReplaying: 0
-  _isRecording: 0
-  _bikeController: {fileID: 0}
